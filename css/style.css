@@ -1,0 +1,140 @@
+/* css! */
+
+
+html {
+  height: 100%;
+  overflow: hidden;
+  font: 140%/1.6 "Montserrat", "Circular Std", "Helvetica", sans-serif; 
+}
+
+body,
+input,
+button  {-webkit-font-smoothing: antialiased; }
+
+body { 
+  background:#fff;
+  margin:0;
+  padding:0;
+  height: 100%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  }
+
+.slide {
+  position: relative;
+  padding: 1vh 10%;
+  width: 100vw;
+  box-sizing: border-box;
+	transform-style: inherit;
+}
+
+.slide-nopad {
+  position: relative;
+  padding: 0;
+  width: 100vw;
+  box-sizing: border-box;
+	transform-style: inherit;
+}
+
+.slide:before, .slide-nopad:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left:0;
+  right:0;
+} 
+
+.content {
+  padding: 5%;
+}
+
+.slide, .slide:before {
+  background: 50% 50% / cover;  
+}
+
+/*====TITLE SLIDE====*/
+
+#title:before { 	background-image:url("http://ciid.dk/root_ciidwww/wp-content/uploads/2014/06/Time-Square.jpg");
+background-attachment:fixed;
+  -webkit-filter: brightness(0.2);
+  z-index:-2;
+  height:100vmax;
+}
+
+h1 {
+  font-family:"Montserrat";
+  text-transform:uppercase;
+  
+}
+#title h1 {
+  font-family:"Montserrat";
+  text-transform:uppercase;
+  font-size:7.5vw;
+    text-align: center;
+    color: #fff;
+    
+}
+#title h2 {
+  font-family:"Montserrat";
+  
+  text-transform:uppercase;
+    text-align: center;
+    color: #fff;
+    
+}
+
+/*==== SLIDE 1 ====*/
+
+#slide1:before {
+  top:40vh;
+  background:#fff;
+  z-index:-1;
+}
+#slide1 {
+  color:#000;
+  background:none;
+}
+
+
+#video{
+  width:100%;
+  height:45vw;
+}
+
+/*====SLIDE 2 / 3====*/
+
+#slide2 {
+  color:#fff;
+}
+
+#slide3 {
+  margin-bottom:3em;
+}
+
+/*====FOOTER SLIDE====*/
+
+
+#footer {
+  text-align:center;
+  color:#fff;
+}
+
+#footer #us img {
+  width:15vw;
+  border-radius:15vw;
+  margin:.5vw;
+}
+
+#footer img {
+  width:50vw;
+}
+
+#footer:before{
+  top:8vh;
+  background:#000;
+  z-index:-1;
+  height:50vh;
+
+}
+
