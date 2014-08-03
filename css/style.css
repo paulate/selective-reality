@@ -12,7 +12,7 @@ input,
 button  {-webkit-font-smoothing: antialiased; }
 
 body { 
-  background:#fff;
+  background:#fff; /*#fff2cc;*/
   margin:0;
   padding:0;
   height: 100%;
@@ -55,32 +55,30 @@ body {
 
 /*====TITLE SLIDE====*/
 
-#title:before { 	background-image:url("http://ciid.dk/root_ciidwww/wp-content/uploads/2014/06/Time-Square.jpg");
-background-attachment:fixed;
-  -webkit-filter: brightness(0.2);
+#title:before { 	
+  background-image:url(../img/park.png);
+  background-attachment:fixed;
   z-index:-2;
   height:100vmax;
 }
 
 h1 {
-  font-family:"Montserrat";
+/*  font-family:"Montserrat";*/
   text-transform:uppercase;
   
 }
 #title h1 {
-  font-family:"Montserrat";
+/*  font-family:"Montserrat";*/
   text-transform:uppercase;
   font-size:7.5vw;
     text-align: center;
-    color: #fff;
     
 }
 #title h2 {
-  font-family:"Montserrat";
+/*  font-family:"Montserrat";*/
   
   text-transform:uppercase;
     text-align: center;
-    color: #fff;
     
 }
 
@@ -118,23 +116,60 @@ h1 {
 #footer {
   text-align:center;
   color:#fff;
+  background:#000;
+  padding-top:2vh;
 }
 
 #footer #us img {
-  width:15vw;
-  border-radius:15vw;
-  margin:.5vw;
+  width:80vw;
+
 }
 
-#footer img {
-  width:50vw;
+#footer #logo {
+  display:block;
+  width:100vw;
 }
+
+#footer #logo img {
+  width:50vw;
+  margin-top:10vh;
+  
+}
+
 
 #footer:before{
-  top:8vh;
-  background:#000;
   z-index:-1;
-  height:50vh;
 
+
+
+}
+
+#team {
+  position:relative;
+  width:80vw;
+}
+span {
+  width:11vw;
+  display:inline-block;
+  vertical-align:top;
+  font-size:1.5vw;
+  line-height:1.5em;
+  margin-top:5vh;
+}
+
+a:link {
+  text-decoration:none;
+  border-bottom: 2px solid #fff;
+  color:#fff;
+}
+a:visited {
+  text-decoration:none;
+  border-bottom: 2px solid #fff;
+  color:#fff;
+}
+a:hover {
+  text-decoration:none;
+  border-bottom: 2px solid #fff;
+  color:#fff;
 }
 
